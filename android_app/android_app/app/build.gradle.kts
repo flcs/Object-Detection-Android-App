@@ -15,6 +15,12 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // Adiciona suporte explícito para CPUs ARM antigas
+        ndk {
+            abiFilters.add("armeabi-v7a")
+            abiFilters.add("arm64-v8a")
+        }
     }
 
     buildTypes {
@@ -54,13 +60,14 @@ dependencies {
     implementation("androidx.camera:camera-lifecycle:${cameraxVersion}")
     implementation("androidx.camera:camera-view:${cameraxVersion}")
 
-    implementation("org.tensorflow:tensorflow-lite:2.14.0")
-    implementation("org.tensorflow:tensorflow-lite-support:0.4.4")
-    
-    // adicionando alterações
+    // Usando uma versão mais antiga do TensorFlow Lite
+    implementation("org.tensorflow:tensorflow-lite:2.9.0")
+    implementation("org.tensorflow:tensorflow-lite-support:0.4.2")
     
     val kotlin_version = "1.5.31"
 
+    // adicionando alterações
+    
     // implementation('androidx.core:core-ktx:1.7.0')
     // implementation('com.android.support:appcompat-v7:28.0.0')
     implementation("org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version")
