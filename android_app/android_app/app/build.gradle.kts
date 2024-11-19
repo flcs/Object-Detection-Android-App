@@ -56,4 +56,27 @@ dependencies {
 
     implementation("org.tensorflow:tensorflow-lite:2.14.0")
     implementation("org.tensorflow:tensorflow-lite-support:0.4.4")
+    
+    // adicionando alterações
+    
+    val kotlin_version = "1.5.31"
+
+    // implementation('androidx.core:core-ktx:1.7.0')
+    // implementation('com.android.support:appcompat-v7:28.0.0')
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version")
+    
+    
+    // implementation('androidx.appcompat:appcompat:1.4.0')
+    // implementation('com.google.android.material:material:1.5.0')
+    // implementation('androidx.constraintlayout:constraintlayout:2.1.2')
+    // implementation('androidx.camera:camera-core:1.1.0-beta01')
+    // implementation('androidx.camera:camera-camera2:1.1.0-beta01')
+    // implementation('androidx.camera:camera-lifecycle:1.1.0-beta01')
+    // implementation('androidx.camera:camera-view:1.0.0-alpha31')
+    // implementation('androidx.activity:activity-ktx:1.2.0')
+    // testImplementation("junit:junit:4.13.2")
+    
+    // androidTestImplementation('androidx.test.ext:junit:1.1.2')
+    // androidTestImplementation('androidx.test.espresso:espresso-core:3.3.0')    
+    
 }
